@@ -16,9 +16,6 @@ class ViewController: UIViewController {
     @IBOutlet var redSlider: UISlider!
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
-    var redSliderValue: CGFloat = 0
-    var greenSliderValue: CGFloat = 0
-    var blueSliderValue: CGFloat = 0
   
     
     override func viewDidLoad() {
@@ -35,31 +32,28 @@ class ViewController: UIViewController {
     
     @IBAction func redSliderAction() {
         redValueLabel.isHidden = false
-        redSliderValue = CGFloat(redSlider.value)
         redValueLabel.text = String(round(redSlider.value * 100)/100)
         colorViewAction()
     }
     
     @IBAction func greenSliderAction() {
         greenValueLabel.isHidden = false
-        greenSliderValue = CGFloat(greenSlider.value)
         greenValueLabel.text = String(round(greenSlider.value * 100)/100)
         colorViewAction()
     }
     
     @IBAction func blueSliderAction() {
         blueValueLabel.isHidden = false
-        blueSliderValue = CGFloat(blueSlider.value)
         blueValueLabel.text = String(round(blueSlider.value * 100)/100)
         colorViewAction()
     }
-    func colorViewAction(){
-        colorView.backgroundColor = UIColor(red: redSliderValue, green: greenSliderValue, blue: blueSliderValue, alpha: 1)
+    private func colorViewAction(){
+        colorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
     }
     
     // MARK: - private Methods
 //функция создания фона из изображения
-func assignbackground(){
+private func assignbackground(){
     //создаем константу с указанием изображения в assets
     let background = UIImage(named: "shtrihi-cveta-color")
     // создаем экземпляр класса работы с изображениями и передаем нужный view для работы
