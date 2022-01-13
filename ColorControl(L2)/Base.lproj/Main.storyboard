@@ -79,6 +79,14 @@
                                     <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="XDN-uK-a5D"/>
                                 </connections>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrY-1r-xh2">
+                                <rect key="frame" x="20" y="20" width="43" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="trash" catalog="system"/>
+                                <connections>
+                                    <action selector="cleanButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="nns-oe-znX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
@@ -90,12 +98,15 @@
                             <constraint firstItem="3gE-Yt-9Ga" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="7gx-ZT-ofJ"/>
                             <constraint firstItem="hK7-u9-LfQ" firstAttribute="top" secondItem="A2o-L2-tQl" secondAttribute="bottom" constant="27" id="KFa-0F-BIM"/>
                             <constraint firstItem="XY4-v4-VW0" firstAttribute="top" secondItem="nHK-bn-PQ8" secondAttribute="bottom" constant="17" id="KUu-rX-qmr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BrY-1r-xh2" secondAttribute="trailing" symbolic="YES" id="Lik-Ya-rFc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WMs-95-CYQ" secondAttribute="bottom" constant="36" id="LsM-7x-h9d"/>
                             <constraint firstItem="Xdk-tn-jNl" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.613333" id="Nh2-I4-vI1"/>
                             <constraint firstItem="3gE-Yt-9Ga" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OkO-Vr-HF1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nHK-bn-PQ8" secondAttribute="trailing" constant="23" id="R9S-wm-7K4"/>
                             <constraint firstItem="Xdk-tn-jNl" firstAttribute="leading" secondItem="WMs-95-CYQ" secondAttribute="trailing" constant="8" id="SqQ-va-OMD"/>
+                            <constraint firstItem="BrY-1r-xh2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="VHX-O1-OeJ"/>
                             <constraint firstItem="1Dp-UA-dt4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="A2o-L2-tQl" secondAttribute="trailing" constant="8" symbolic="YES" id="XKw-T3-7Gc"/>
+                            <constraint firstItem="BrY-1r-xh2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Zih-G2-MUP"/>
                             <constraint firstItem="Pjj-90-bBW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hK7-u9-LfQ" secondAttribute="trailing" constant="8" symbolic="YES" id="ZsH-5s-MB3"/>
                             <constraint firstItem="S3c-4r-cCH" firstAttribute="top" secondItem="hK7-u9-LfQ" secondAttribute="bottom" constant="28" id="aad-Y4-77f"/>
                             <constraint firstItem="hK7-u9-LfQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bAF-XU-z3w"/>
@@ -116,6 +127,7 @@
                     <connections>
                         <outlet property="blueSlider" destination="Xdk-tn-jNl" id="pYz-yF-ce4"/>
                         <outlet property="blueValueLabel" destination="WMs-95-CYQ" id="HOb-Id-Jhn"/>
+                        <outlet property="cleanButton" destination="BrY-1r-xh2" id="G04-Hn-SiT"/>
                         <outlet property="colorView" destination="3gE-Yt-9Ga" id="E9c-hm-nls"/>
                         <outlet property="greenSlider" destination="XY4-v4-VW0" id="ZGF-cK-cpd"/>
                         <outlet property="greenValueLabel" destination="Pjj-90-bBW" id="qRM-RY-fEk"/>
@@ -129,6 +141,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="trash" catalog="system" width="121" height="128"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
