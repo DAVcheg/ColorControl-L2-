@@ -49,11 +49,6 @@ class ViewController: UIViewController {
         blueValueLabel.text = String(round(blueSlider.value * 100)/100)
         colorViewAction()
     }
-    private func colorViewAction(){
-        colorView.alpha = 1
-        colorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
-    }
-    
     @IBAction func cleanButtonAction() {
         colorView.alpha = 0
         redSlider.value = 0
@@ -62,6 +57,11 @@ class ViewController: UIViewController {
         redValueLabel.isHidden = true
         greenValueLabel.isHidden = true
         blueValueLabel.isHidden = true
+    }
+    
+    private func colorViewAction(){
+        colorView.alpha = 1
+        colorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
     }
     
     
