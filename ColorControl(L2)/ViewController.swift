@@ -12,10 +12,13 @@ class ViewController: UIViewController {
     @IBOutlet var redValueLabel: UILabel!
     @IBOutlet var greenValueLabel: UILabel!
     @IBOutlet var blueValueLabel: UILabel!
+    
     @IBOutlet var colorView: UIView!
+    
     @IBOutlet var redSlider: UISlider!
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
+    
     @IBOutlet var cleanButton: UIButton!
     
     
