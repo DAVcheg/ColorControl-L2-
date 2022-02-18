@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BackgroundSettingsViewController.swift
 //  ColorControl(L2)
 //
 //  Created by DAV on 12.01.2022.
@@ -7,8 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+
+class BackgroundSettingsViewController: UIViewController {
     
+    // MARK: - IB Outlets
+
     @IBOutlet var redValueLabel: UILabel!
     @IBOutlet var greenValueLabel: UILabel!
     @IBOutlet var blueValueLabel: UILabel!
@@ -19,58 +22,45 @@ class ViewController: UIViewController {
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
     
-    @IBOutlet var cleanButton: UIButton!
+    // MARK: - Public Properties
     
+    var backgroundColor: UIColor!
+    
+    // MARK: - Override Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        cleanButton.alpha = 0.3
+        colorView.backgroundColor = backgroundColor
         assignbackground()
-        redValueLabel.isHidden = true
-        greenValueLabel.isHidden = true
-        blueValueLabel.isHidden = true
     }
     
     override func viewDidLayoutSubviews() {
         colorView.layer.cornerRadius = colorView.frame.width / 2
     }
     
+    // MARK: - IB Actions
+    
     @IBAction func redSliderAction() {
-        redValueLabel.isHidden = false
         redValueLabel.text = String(round(redSlider.value * 100)/100)
         colorViewAction()
     }
     
     @IBAction func greenSliderAction() {
-        greenValueLabel.isHidden = false
         greenValueLabel.text = String(round(greenSlider.value * 100)/100)
         colorViewAction()
     }
     
     @IBAction func blueSliderAction() {
-        blueValueLabel.isHidden = false
         blueValueLabel.text = String(round(blueSlider.value * 100)/100)
         colorViewAction()
     }
-    @IBAction func cleanButtonAction() {
-        colorView.alpha = 0
-        redSlider.value = 0
-        greenSlider.value = 0
-        blueSlider.value = 0
-        redValueLabel.isHidden = true
-        greenValueLabel.isHidden = true
-        blueValueLabel.isHidden = true
-    }
     
-    private func colorViewAction(){
-        colorView.alpha = 1
-        colorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
-    }
+}
     
-    
-    // MARK: - private Methods
-    //функция создания фона из изображения
-    private func assignbackground(){
+    // MARK: - Extension
+
+extension BackgroundSettingsViewController {
+private func assignbackground(){
         //создаем константу с указанием изображения в assets
         let background = UIImage(named: "shtrihi-cveta-color")
         // создаем экземпляр класса работы с изображениями и передаем нужный view для работы
@@ -87,6 +77,10 @@ class ViewController: UIViewController {
         view.addSubview(imageView)
         //метод переноса нового слоя на задний фон
         self.view.sendSubviewToBack(imageView)
+    }
+
+    private func colorViewAction(){
+        colorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
     }
     
 }

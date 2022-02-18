@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		5761EDF4278EAA3F00A9E4DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5761EDF3278EAA3F00A9E4DD /* AppDelegate.swift */; };
 		5761EDF6278EAA3F00A9E4DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5761EDF5278EAA3F00A9E4DD /* SceneDelegate.swift */; };
-		5761EDF8278EAA3F00A9E4DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5761EDF7278EAA3F00A9E4DD /* ViewController.swift */; };
+		5761EDF8278EAA3F00A9E4DD /* BackgroundSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5761EDF7278EAA3F00A9E4DD /* BackgroundSettingsViewController.swift */; };
 		5761EDFB278EAA3F00A9E4DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5761EDF9278EAA3F00A9E4DD /* Main.storyboard */; };
 		5761EDFD278EAA4100A9E4DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5761EDFC278EAA4100A9E4DD /* Assets.xcassets */; };
 		5761EE00278EAA4100A9E4DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5761EDFE278EAA4100A9E4DD /* LaunchScreen.storyboard */; };
+		57C57FFE27BF192F00976B25 /* BackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C57FFD27BF192F00976B25 /* BackgroundViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5761EDF0278EAA3F00A9E4DD /* ColorControl(L2).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ColorControl(L2).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5761EDF3278EAA3F00A9E4DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5761EDF5278EAA3F00A9E4DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5761EDF7278EAA3F00A9E4DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5761EDF7278EAA3F00A9E4DD /* BackgroundSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundSettingsViewController.swift; sourceTree = "<group>"; };
 		5761EDFA278EAA3F00A9E4DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5761EDFC278EAA4100A9E4DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5761EDFF278EAA4100A9E4DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5761EE01278EAA4100A9E4DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57C57FFD27BF192F00976B25 /* BackgroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				5761EDF3278EAA3F00A9E4DD /* AppDelegate.swift */,
 				5761EDF5278EAA3F00A9E4DD /* SceneDelegate.swift */,
-				5761EDF7278EAA3F00A9E4DD /* ViewController.swift */,
+				57C57FFD27BF192F00976B25 /* BackgroundViewController.swift */,
+				5761EDF7278EAA3F00A9E4DD /* BackgroundSettingsViewController.swift */,
 				5761EDF9278EAA3F00A9E4DD /* Main.storyboard */,
 				5761EDFC278EAA4100A9E4DD /* Assets.xcassets */,
 				5761EDFE278EAA4100A9E4DD /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5761EDF8278EAA3F00A9E4DD /* ViewController.swift in Sources */,
+				57C57FFE27BF192F00976B25 /* BackgroundViewController.swift in Sources */,
+				5761EDF8278EAA3F00A9E4DD /* BackgroundSettingsViewController.swift in Sources */,
 				5761EDF4278EAA3F00A9E4DD /* AppDelegate.swift in Sources */,
 				5761EDF6278EAA3F00A9E4DD /* SceneDelegate.swift in Sources */,
 			);
