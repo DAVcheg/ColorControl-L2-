@@ -7,18 +7,25 @@
 
 import UIKit
 
+protocol BackgroundSettingsViewControllerDelegate {
+    func setNewBackgroundColor(for color: UIColor)
+}
 
 class BackgroundViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    self.view.backgroundColor = UIColor.green
-    }
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        guard let navigationVC = segue.destination as? UINavigationController else { return }
 //        guard let backgroundSetVC = navigationVC.topViewController as? BackgroundSettingsViewController else { return }
         let backgroundSetVC = segue.destination as! BackgroundSettingsViewController
+        backgroundSetVC.delegate = self
         backgroundSetVC.backgroundColor = view.backgroundColor
     }
+}
+
+extension BackgroundViewController: BackgroundSettingsViewControllerDelegate{
+
+    func setNewBackgroundColor(for color: UIColor){
+    view.backgroundColor = color
+}
+
 }
