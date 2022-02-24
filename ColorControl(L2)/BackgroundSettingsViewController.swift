@@ -60,7 +60,6 @@ class BackgroundSettingsViewController: UIViewController {
         redSlider.value = Float(redValueTextEdit.text!) ?? 0.00
         greenSlider.value = Float(greenValueTextEdit.text!) ?? 0.00
         blueSlider.value = Float(blueValueTextEdit.text!) ?? 0.00
-        
         sliderAction()
     }
     
@@ -68,13 +67,11 @@ class BackgroundSettingsViewController: UIViewController {
         delegate.setNewBackgroundColor(for: colorView.backgroundColor ?? UIColor.systemBackground )
         dismiss(animated: true, completion: nil)
     }
-    
-    
 }
 
 // MARK: - Extension
 
-extension BackgroundSettingsViewController: UITextFieldDelegate {
+extension BackgroundSettingsViewController {
     private func assignbackground(){
         let background = UIImage(named: "shtrihi-cveta-color")
         let imageView = UIImageView(frame: view.bounds)

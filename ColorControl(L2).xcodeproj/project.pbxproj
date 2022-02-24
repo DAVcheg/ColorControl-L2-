@@ -12,7 +12,6 @@
 		5761EDF8278EAA3F00A9E4DD /* BackgroundSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5761EDF7278EAA3F00A9E4DD /* BackgroundSettingsViewController.swift */; };
 		5761EDFB278EAA3F00A9E4DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5761EDF9278EAA3F00A9E4DD /* Main.storyboard */; };
 		5761EDFD278EAA4100A9E4DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5761EDFC278EAA4100A9E4DD /* Assets.xcassets */; };
-		5761EE00278EAA4100A9E4DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5761EDFE278EAA4100A9E4DD /* LaunchScreen.storyboard */; };
 		57C57FFE27BF192F00976B25 /* BackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C57FFD27BF192F00976B25 /* BackgroundViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +22,6 @@
 		5761EDF7278EAA3F00A9E4DD /* BackgroundSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundSettingsViewController.swift; sourceTree = "<group>"; };
 		5761EDFA278EAA3F00A9E4DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5761EDFC278EAA4100A9E4DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5761EDFF278EAA4100A9E4DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5761EE01278EAA4100A9E4DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57C57FFD27BF192F00976B25 /* BackgroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,7 +62,6 @@
 				5761EDF7278EAA3F00A9E4DD /* BackgroundSettingsViewController.swift */,
 				5761EDF9278EAA3F00A9E4DD /* Main.storyboard */,
 				5761EDFC278EAA4100A9E4DD /* Assets.xcassets */,
-				5761EDFE278EAA4100A9E4DD /* LaunchScreen.storyboard */,
 				5761EE01278EAA4100A9E4DD /* Info.plist */,
 			);
 			path = "ColorControl(L2)";
@@ -128,7 +125,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5761EE00278EAA4100A9E4DD /* LaunchScreen.storyboard in Resources */,
 				5761EDFD278EAA4100A9E4DD /* Assets.xcassets in Resources */,
 				5761EDFB278EAA3F00A9E4DD /* Main.storyboard in Resources */,
 			);
@@ -157,14 +153,6 @@
 				5761EDFA278EAA3F00A9E4DD /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5761EDFE278EAA4100A9E4DD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5761EDFF278EAA4100A9E4DD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
